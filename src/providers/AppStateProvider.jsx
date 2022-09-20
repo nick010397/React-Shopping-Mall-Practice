@@ -164,6 +164,7 @@ const AppStateProvider = ({ children }) => {
       return orders.filter((order) => order.id !== id);
     });
   }, []);
+
   const removeAll = useCallback(() => {
     setOrders([]);
   }, []);
